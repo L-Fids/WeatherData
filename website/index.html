@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body class="container">
+        <header class="header-container">
+            <div class="page-title">
+                <h1>Asynchronous Data Fetching</h1>
+            </div>
+        </header>
+        <main class="main-container">
+            <div class="data-entry">
+                <!-- Postal Code Entry -->
+                <div class="input">
+                    <label for="postalcode">Canadian Postal Code (first 3 characters):</label>
+                    <input type="text" id="postalcode" name="postalcode" maxlength="3" placeholder="Enter first three digits of postal code...">
+                </div>
+                <!-- User Response Entry -->
+                <div class="input" id="user-response">
+                    <label for="response">User Response:</label>
+                    <textarea id="response" name="response" row="3" cols="50" placeholder="Enter notes here..."></textarea>
+                </div>
+                <input type="submit" value="Submit" id="submit">
+            </div>
+            <!--This should be dynamically added when an entry is created?-->
+            <div id="entry-holder">
+                <div id="date">
+
+                </div>
+                <div id="temp">
+
+                </div>
+                <div id="content">
+
+                </div>
+            </div>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>
